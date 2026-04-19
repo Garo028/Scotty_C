@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: scotty-c-bot
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    envVars:
+      - key: OWNER_NUMBER
+        value: 263788114185
+      - key: NODE_ENV
+        value: production
